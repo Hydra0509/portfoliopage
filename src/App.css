@@ -1,38 +1,315 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    background-image: url('./images/gradientbackground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header {
+  width: 100%;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color:#ffff;
+  margin:0;
+  box-sizing: border-box;
+  background-image: url('./images/pictureskull.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backgroud-position: center;
+  -webkit-transition: .9s ease;
+  transition: .9s ease;
+  height: 950px;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+   background:transparent;
+    animation: fadeIn ease-in  6s;
+   -webkit-animation: fadeIn ease-in 6s;
+   height: 30px;
+   padding-top: 50px;
+
+ }
+
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+    background:transparent;
+    animation: fadeIn ease-out 5s;
+    -webkit-animation: fadeIn ease-out 5s;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+body {
+} 
+
+.bodyContainer .aboutme {
+  font-size: 80px;
+  width: 500px;
+  left: 40%;
+  position: relative;
+  user-select: none;
+  text-decoration: underline overline;
+  text-underline-offset: 0.35em;
+}
+ .mywork {
+  font-size: 80px;
+  width: 500px;
+  left: 40%;
+  position: relative;
+  user-select: none;
+  text-decoration: underline overline;
+  text-underline-offset: 0.35em;
+}
+
+.bodyContainer {
+  position: relative;
+  color: #ffff;
+  display: flex;
+  background:transparent;
+ }
+
+.bodyContainer h2 {
+  padding: 50px;
+  display: flex;
+  user-select: none;
+  text-align: center;
+  text-shadow: 2px 2px black; 
   }
-  to {
-    transform: rotate(360deg);
+
+.bodyContainer img {
+  display: flex;
+  float: right;
+  margin:50px;
+    }
+
+
+  .navbar {
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    width: 9px;
+    height: 230px;
+    background:black;
+    transition:0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index:7;  
   }
+
+  .navbar:hover {
+    width: 60px;
+    height: 230px;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+  }
+
+  .navbar ul li {
+
+    top: 15px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    list-style: none;
+    background:black;
+  }
+
+  .navbar ul li a {
+    position: relative;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #ffff;
+  }
+
+  .navbar ul li a .icon {
+    font-size: 50px;
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 100px;
+    line-height: 90px;
+    text-align: center;
+  }
+
+.navbar ul li a .icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+  .slider {
+    top: 150px;
+    position: relative;
+    display: flex;
+    width:45%;
+    justify-content: center;
+    align-self: center;
+    left: 520px;
+    user-select: none;
+    background:transparent;
+  }
+
+  .image {
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+
+  .right-arrow {
+    position: absolute;
+    top: 45%;
+    right:950px;
+    font-size: 4rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100%;
+
+  }
+
+    .left-arrow {
+    position: absolute;
+    top: 45%;
+    left:950px;
+    font-size: 4rem;
+    color:white;
+    z-index: 10;
+     cursor: pointer;
+    user-select: none;
+    border-radius: 100%;
+  }
+
+  .slide {
+    opacity: 1;
+    transition-duration: 1s ease;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.05)
+  }
+
+    .loremtext {
+    position: absolute;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  color: #ffff;
+  width: 500px;
+  margin: 150px;
+  left: -500px;
+  font-size: 25px;
+  user-select: none;
+}
+
+.footer {
+  background-image: url('./images/footerimage.svg');
+  position: relative;
+  bottom: -5000px;
+}
+
+.footer h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.footer ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+.logo {
+  width: 90px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.10);
+  transition: all .5s ease-in-out;
+}
+
+.ytlogo {
+  width: 140px;
+  background: transparent;
+}
+
+.ytlogo:hover {
+  transform: scale(1.10);
+  transition: all .5s ease-in-out;
+}
+
+.footer .popup {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  position: relative;
+  width: 200px;
+  color: #ffff;
+  top: -210px;
+  left: 1080px;
+}
+
+.paddingbetween {
+  padding-top: 150px;
+}
+.myworkscrollsection {
+  position: fixed;
 }
