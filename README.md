@@ -72,3 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 rgba(73, 14, 147, 1)
 rgba(158, 0, 86, 1)
+rgba(33, 34, 35, 1)
+
+
+<RiArrowUpSLine data-aos="fade-up" className="divarrow" onClick={() => toggleActivate()} />

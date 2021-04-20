@@ -1,22 +1,25 @@
-import React from 'react'
-
+import pictureskull from './images/pictureskull.jpg'
+import gradientbackground1 from './images/gradientbackground1.svg'
+import gradientbackground2 from './images/gradientbackground2.svg'
+import gradientbackground3 from './images/gradientbackground3.svg'
+import gradientbackground4 from './images/gradientbackground4.svg'
 
 export const SliderData = [
 {
-	image: 'https://media.cntraveler.com/photos/57fea9ec8584f8cd20e65f15/16:9/w_1600,c_limit/Aerial-One&OnlyReethiRah-Maldives-CRHotel.jpg'
+	image: pictureskull
 },
 {
-	image: 'https://www.odyssey-travels.com/site/pages/african-indian-ocean-beaches-and-islands-including-zanzibar=403657-320.jpg'
+	image: gradientbackground1
 },
 {
-	image: 'https://rccl-h.assetsadobe.com/is/image/content/dam/royal/ports-and-destinations/destinations/caribbean-beaches/assets/beautiful-barbados-bottom-bay-beach-hero.jpg?$750x667$'
+	image: gradientbackground2
 },
 {
-	image: 'http://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg'
+	image: gradientbackground3
 },
 {
-	image: 'https://media.timeout.com/images/105488726/630/472/image.jpg'
-},
+	image: gradientbackground4
+}
 ]
 
 export default SliderData;

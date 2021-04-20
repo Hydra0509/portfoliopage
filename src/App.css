@@ -12,20 +12,37 @@ html {
   background-position: center center;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(98, 98, 96, 1);
+}
+::-webkit-scrollbar-track:hover {
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgba(240, 145, 39, 1);
+  border-radius:30px;
+    cursor: pointer;
+
+}
+
 header {
   width: 100%;
   display:flex;
   justify-content: center;
   color:#ffff;
-  margin:0;
-  box-sizing: border-box;
+  margin-right: 0px;
+  margin-left: 0px;
   background-image: url('./images/pictureskull.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   backgroud-position: center;
   -webkit-transition: .9s ease;
   transition: .9s ease;
-  height: 950px;
+  height: 105vh;
   font-size: 2em;
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
@@ -80,8 +97,121 @@ header h1 {
 100% {opacity:1;}
 }
 
-body {
-} 
+.divarrow {
+  position: relative;
+  top: 1100px;
+  font-size: 100px;
+  color: white;
+  left: 48%;
+}
+
+.readmorebutton {
+  position: relative;
+  width: 200px;
+  font-size: 20px;
+  left: 46%;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  user-select: none;
+  outline: none;
+
+}
+.divtext {
+  position: relative;
+  top: 50px;
+  color:rgba(240, 145, 39, 1);
+}
+
+.divtitle {
+  color:rgba(240, 145, 39, 1);
+    position: relative;
+  left:850px;
+  width: 350px;
+}
+
+
+.sliderone {
+   position: relative;
+    display: flex;
+    width:45%;
+    justify-content: center;
+    align-self: center;
+    left: 550px;
+    user-select: none;
+    background:transparent;
+}
+
+
+.imageone {
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+  .right-arrowone {
+    position: absolute;
+    top: 45%;
+    right:930px;
+    font-size: 4rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    color:rgba(240, 145, 39, 1);
+
+  }
+
+    .right-arrowone:hover {
+    position: absolute;
+    top: 45%;
+    right:930px;
+    font-size: 4.2rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    color:rgba(240, 145, 39, 1);
+  }
+  .left-arrowone {
+    position: absolute;
+    top: 45%;
+    left:930px;
+    font-size: 4rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100%;
+    color:rgba(240, 145, 39, 1);
+  }
+
+    .left-arrowone:hover {
+    position: absolute;
+    top: 45%;
+    left:930px;
+    font-size: 4.2rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100%;
+    color:rgba(240, 145, 39, 1);
+
+  }
+
+  .loremone {
+  position: absolute;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  color: #ffff;
+  width: 700px;
+  bottom: 500px;
+  margin-left: 150px;
+  font-size: 25px;
+  user-select: none;
+  }
 
 .bodyContainer .aboutme {
   font-size: 80px;
@@ -107,7 +237,8 @@ body {
   color: #ffff;
   display: flex;
   background:transparent;
- }
+  z-index: 1;
+   }
 
 .bodyContainer h2 {
   padding: 50px;
@@ -115,6 +246,7 @@ body {
   user-select: none;
   text-align: center;
   text-shadow: 2px 2px black; 
+  z-index: 1;
   }
 
 .bodyContainer img {
@@ -130,7 +262,7 @@ body {
     top: 20px;
     width: 9px;
     height: 230px;
-    background:black;
+    background:rgba(240, 145, 39, 1);
     transition:0.5s;
     overflow: hidden;
     border-radius: 20px;
@@ -157,31 +289,36 @@ body {
     width: 100%;
     list-style: none;
     background:black;
+        background:rgba(240, 145, 39, 1);;
   }
 
-  .navbar ul li a {
-    position: relative;
-    display: block;
-    display: flex;
-    text-decoration: none;
-    color: #ffff;
-  }
 
-  .navbar ul li a .icon {
+   .navbar ul li .navbaricondown {
     font-size: 50px;
     position: relative;
     display: block;
     min-width: 60px;
-    height: 100px;
-    line-height: 90px;
+    height: 70px;
+    top: 60px;
     text-align: center;
+    border:0;
+    outline: none;
+    background: rgba(240, 145, 39, 1);
+
   }
 
-.navbar ul li a .icon:hover {
-  transform: scale(1.1);
-}
-
-
+   .navbar ul li .navbariconup {
+    font-size: 50px;
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 70px;
+    line-height: 90px;
+    text-align: center;
+    border:0;
+    outline: none;
+    background: rgba(240, 145, 39, 1);
+  }
 
   .slider {
     top: 150px;
@@ -285,12 +422,13 @@ body {
   transition: all .5s ease-in-out;
 }
 
-.ytlogo {
+.vimeologo {
   width: 140px;
   background: transparent;
+  user-select: none;
 }
 
-.ytlogo:hover {
+.vimeologo:hover {
   transform: scale(1.10);
   transition: all .5s ease-in-out;
 }
@@ -303,13 +441,11 @@ body {
   position: relative;
   width: 200px;
   color: #ffff;
-  top: -210px;
-  left: 1080px;
+  top: 10px;
+  left: 830px;
+  height: 0px;
 }
 
 .paddingbetween {
   padding-top: 150px;
-}
-.myworkscrollsection {
-  position: fixed;
 }

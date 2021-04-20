@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Header() {
 	const [offsetY, setOffsetY] = useState(0);

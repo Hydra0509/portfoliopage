@@ -1,8 +1,7 @@
 import React from 'react'
-import { IoIosArrowDropdownCircle } from 'react-icons/io';
-import { IoIosArrowDropupCircle } from 'react-icons/io';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowUp } from 'react-icons/io';
+import { Link } from 'react-scroll'
 
 export default function NavBar() {
 	return (
@@ -10,18 +9,12 @@ export default function NavBar() {
 		<ul>
 		<Link activeClass="active" to="headertop" smooth={true} isDynamic={true}>
 			<li>
-				<a href="#">
-					<span className="icon"><IoIosArrowDropupCircle /></span>
-					<span className="title"></span>
-				</a>
+					<button className="navbariconup"><IoIosArrowUp /></button>
 			</li>
 			</Link>
 			<Link activeClass="active" to="footer" spy={true}  smooth={true}>
 			<li>
-				<a href="#">
-					<span className="icon"><IoIosArrowDropdownCircle /></span>
-					<span className="title"></span>
-				</a>
+					<button className="navbaricondown"><IoIosArrowDown /></button>
 			</li>
 			</Link>
 		</ul>

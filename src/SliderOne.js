@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react' 
 import SliderData from './SliderData'
-import {IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
+import {MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
 
-function ImageSlider({ slides }) {
+function SliderOne({ slides }) {
 	const [current,setCurrent] = useState(0)
 	const length = slides.length
 
@@ -21,14 +21,14 @@ function ImageSlider({ slides }) {
 
 
 return (
-			<div data-aos="fade-up" className = "slider">
-			<IoIosArrowDropleftCircle className="right-arrow" onClick={prevSlide} />
-			<IoIosArrowDroprightCircle className="left-arrow" onClick={nextSlide} />
+			<div className = "sliderone">
+			<MdKeyboardArrowLeft className="right-arrowone" onClick={prevSlide} />
+			<MdKeyboardArrowRight className="left-arrowone" onClick={nextSlide} />
 			{SliderData.map((slide, index) => {
 				return (
 
 						<div className={index === current ? 'slide active' : 'slide'} key={index}>
-						{index === current && (<img src={slide.image} alt='beaches' className="image" />)
+						{index === current && (<img src={slide.image} alt='beaches' className="imageone" />)
 						}
 						</div>
 					)
@@ -39,6 +39,4 @@ return (
 
 }
 
-export default ImageSlider;
-
-   /* <ImageSlider slides={SliderData} />*/
+export default SliderOne;
