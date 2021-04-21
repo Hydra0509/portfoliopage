@@ -2,7 +2,6 @@ import './App.css';
 import Header from './Header'
 import Body from './Body'
 import NavBar from './NavBar'
-import Footer from './Footer'
 import React, { useEffect} from 'react'
 function App() {
 
@@ -15,7 +14,6 @@ function App() {
     <Header />
     <Body />
     <NavBar />
-    <Footer />
     </>
   );
 }

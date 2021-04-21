@@ -22,8 +22,7 @@ function SliderOne({ slides }) {
 
 return (
 			<div className = "sliderone">
-			<MdKeyboardArrowLeft className="right-arrowone" onClick={prevSlide} />
-			<MdKeyboardArrowRight className="left-arrowone" onClick={nextSlide} />
+		<button className="right-arrowone" onClick={prevSlide}><MdKeyboardArrowLeft /></button>
 			{SliderData.map((slide, index) => {
 				return (
 
@@ -32,9 +31,11 @@ return (
 						}
 						</div>
 					)
+				
 					
-			})}
+			})}<button className="left-arrowone" onClick={nextSlide}><MdKeyboardArrowRight  /></button>
 			</div>
+
 	)
 
 }

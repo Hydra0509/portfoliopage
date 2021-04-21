@@ -9,7 +9,7 @@ function Footer() {
 	return (
 		
 			<div className="footer">
-				<p className="popup">{isCopied ? "oroveczt@gmail.com Copied to clipboard" : ""}</p>
+				{/*<p className="popup">{isCopied ? "oroveczt@gmail.com Copied to clipboard" : ""}</p>*/}
 		<ul>
 			<li>
 				<a href="https://www.instagram.com/thomm.design/" target="_blank" rel="noreferrer">
