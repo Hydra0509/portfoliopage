@@ -1,12 +1,11 @@
 import React, { useState,useEffect } from 'react'
-import ImageSlider from './ImageSlider'
 import SliderData from './SliderData'
-import Skull from './images/pictureskull.jpg'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import SliderOne from './SliderOne'
 import {RiArrowUpSLine} from 'react-icons/ri'
 import Footer from './Footer'
+import ImageSwiper from './swiper.js'
 
 export default function Bodypart() {
 const [offsetY, setOffsetY] = useState(0);
@@ -63,7 +62,8 @@ function toggleDeactivate() {
 		<div className="paddingbetween"></div>
 		<div style={divstyle} className="bodycontentone">
 		<h1 className="divtitle">Cím/valami szöveg</h1>
-		<SliderOne slides={SliderData} />
+		<ImageSwiper />
+		<br></br>
 		<button className="readmorebutton" onClick={() => toggleActivate()}>Read more</button>
 		<h2 className="divtext" style={divtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at sem consectetur, bibendum massa sodales, luctus turpis. Donec molestie eros bibendum tortor imperdiet imperdiet. Morbi non tincidunt mi. Cras at feugiat risus. Nam non metus dignissim, elementum purus dictum, vulputate dolor. Duis massa sapien, congue a semper at, luctus non augue. Mauris tincidunt ante vitae justo suscipit, quis commodo nunc accumsan. Cras vitae congue massa. Fusce vel interdum neque. Suspendisse potenti. Morbi id auctor erat. Vivamus hendrerit sit amet lorem ut convallis.
 

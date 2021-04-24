@@ -158,14 +158,7 @@ header h1 {
 }
 
 
-.imageone {
-  justify-content: center;
-   display: flex;
-    width: 900px;
-    height: 500px;
-    border: 1px solid red;
-    border-radius: 10px;
-}
+
 .right-arrowone {
     align-self: center;
     height: 50px;
@@ -388,4 +381,23 @@ flex-direction: column;
 
 .paddingbetween2 {
   padding-top: 110px;
+}
+
+.swiper-container {
+  justify-content: center;
+   display: flex;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+
+}
+
+.imageone {
+  align-items: center;
+  justify-content: center;
+   display: flex;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+
 }
