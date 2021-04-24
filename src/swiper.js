@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
-import SwiperCore, { Navigation, Pagination,EffectCube } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 import pictureskull from './images/pictureskull.jpg'
 import gradientbackground1 from './images/gradientbackground1.svg'
 import gradientbackground2 from './images/gradientbackground2.svg'
@@ -31,12 +31,11 @@ const SliderData = [
 }
 ]
 
-SwiperCore.use([Pagination,Navigation,EffectCube])
+SwiperCore.use([Pagination,Navigation])
 
 export default function ImageSwiper() {
   return (
     <Swiper
-    	effect="cube"
       navigation={{ clickable: true }}
       pagination={{ clickable: true}} 
       spaceBetween={50}
