@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination,Lazy } from 'swiper';
 import pictureskull from './images/pictureskull.jpg'
 import gradientbackground1 from './images/gradientbackground1.svg'
 import gradientbackground2 from './images/gradientbackground2.svg'
@@ -31,17 +31,17 @@ const SliderData = [
 }
 ]
 
-SwiperCore.use([Pagination,Navigation])
+SwiperCore.use([Pagination,Navigation,Lazy])
 
 export default function ImageSwiper() {
   return (
     <Swiper
+      type={'progressbar'}
+      loop = {true}
       navigation={{ clickable: true }}
       pagination={{ clickable: true}} 
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       { SliderData.map( SliderData => (
       	<SwiperSlide className="imageone" key={SliderData.id}>

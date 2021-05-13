@@ -1,25 +1,9 @@
 import React, { useState,useEffect } from 'react'
-import SliderData from './SliderData'
-import Aos from 'aos'
-import "aos/dist/aos.css"
-import SliderOne from './SliderOne'
 import {RiArrowUpSLine} from 'react-icons/ri'
 import Footer from './Footer'
 import ImageSwiper from './swiper.js'
 
 export default function Bodypart() {
-const [offsetY, setOffsetY] = useState(0);
-const handleScroll = () => setOffsetY(window.pageYOffset);
-useEffect(() => {
-  window.addEventListener('scroll', handleScroll);
-
-  return () =>  window.removeEventListener('scroll', handleScroll)
-},[]);
-
-useEffect(() => {
-	Aos.init({duration: 3200, once:true});
-}, []);
-
 
 const [divstyle,setDivStyle] = useState({
 	height: '700px',
@@ -55,26 +39,29 @@ function toggleDeactivate() {
 
 
 	return (
-		<div className="bodyContainer" style={{ 
-		 	transform: `translateY(-${ offsetY * 0.0 }px)` , zIndex:''}}>
-		<div style= {{transform: `translateY(${ offsetY * 0.4 }px)`}}>
-		<h1 className="aboutme">ABOUT ME</h1>
-		<div className="paddingbetween"></div>
-		<div style={divstyle} className="bodycontentone">
-		<h1 className="divtitle">Cím/valami szöveg</h1>
-		<ImageSwiper />
-		<br></br>
-		<button className="readmorebutton" onClick={() => toggleActivate()}>Read more</button>
-		<h2 className="divtext" style={divtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at sem consectetur, bibendum massa sodales, luctus turpis. Donec molestie eros bibendum tortor imperdiet imperdiet. Morbi non tincidunt mi. Cras at feugiat risus. Nam non metus dignissim, elementum purus dictum, vulputate dolor. Duis massa sapien, congue a semper at, luctus non augue. Mauris tincidunt ante vitae justo suscipit, quis commodo nunc accumsan. Cras vitae congue massa. Fusce vel interdum neque. Suspendisse potenti. Morbi id auctor erat. Vivamus hendrerit sit amet lorem ut convallis.
 
-In at libero elit. Ut posuere nunc vel suscipit egestas. </h2>
-<RiArrowUpSLine style={arrowstyle} className="divarrow" onClick={() => toggleDeactivate()} />
-		</div>
-		<div className="paddingbetween2"></div>
-		<h1 className="contactme">CONTACT ME</h1>
-		<div className="paddingbetween2"></div>
-				<Footer />
-		</div>
-		</div>
+		<div className="bodyContainer" >
+			<div>
+				<h1 className="aboutme">ABOUT ME</h1>
+					<div className="paddingbetween"></div>
+						<div style={divstyle} className="bodycontentone">
+							<h1 className="divtitle">Cím/valami szöveg</h1>
+								<ImageSwiper />
+									<br></br>
+										<button className="readmorebutton" onClick={() => toggleActivate()}>Read more</button>
+											<h2 className="divtext" style={divtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at sem consectetur, bibendum massa sodales, luctus turpis. Donec molestie eros bibendum tortor imperdiet imperdiet. Morbi non tincidunt mi. Cras at feugiat risus. Nam non metus dignissim, elementum purus dictum, vulputate dolor. Duis massa sapien, congue a semper at, luctus non augue. Mauris tincidunt ante vitae justo suscipit, quis commodo nunc accumsan. Cras vitae congue massa. Fusce vel interdum neque. Suspendisse potenti. Morbi id auctor erat. Vivamus hendrerit sit amet lorem ut convallis.
+
+											In at libero elit. Ut posuere nunc vel suscipit egestas. </h2>
+												<RiArrowUpSLine style={arrowstyle} className="divarrow" onClick={() => toggleDeactivate()} />
+										</div>
+									<div className="paddingbetween2"></div>
+								<h1 className="contactme">CONTACT ME</h1>
+							<div className="paddingbetween2"></div>
+							<div className="section1"></div>
+							<div className="section2"></div>
+							<div className="section3"></div>
+						<Footer />
+					</div>
+				</div>
 				)
 }

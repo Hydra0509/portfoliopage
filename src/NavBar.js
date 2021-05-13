@@ -12,7 +12,7 @@ export default function NavBar() {
 					<button className="navbariconup"><IoIosArrowUp /></button>
 			</li>
 			</Link>
-			<Link activeClass="active" to="footer" spy={true}  smooth={true}>
+			<Link activeClass="active" to="logo" spy={true} offset={250}  smooth={true}>
 			<li>
 					<button className="navbaricondown"><IoIosArrowDown /></button>
 			</li>

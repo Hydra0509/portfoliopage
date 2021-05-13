@@ -7,7 +7,8 @@
 }
 
 html {
-    background-image: url('./images/gradientbackground.svg');
+  background-attachment: fixed;
+  background-image: url('./images/gradientbackground.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -99,6 +100,8 @@ header h1 {
 100% {opacity:1;}
 }
 
+
+
 .divarrow {
   display: flex;
   flex-direction: column;
@@ -110,6 +113,34 @@ header h1 {
 
 .bodycontentone {
   width: 100%;
+}
+
+.section1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('./images/pictureskull.jpg');
+  height: 400px;
+  padding:0;
+}
+
+.section2 {
+  display: inline-block;
+  width: 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(./images/gradientbackground3.svg);
+  height: 400px;
+}
+
+.section3 {
+  display: inline-block;
+  width: 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(./images/gradientbackground2.svg);
+  height: 400px;
 }
 
 .readmorebutton {
@@ -124,6 +155,7 @@ header h1 {
   outline: none;
 
 }
+
 .divtext {
   display: flex;
   justify-content: center;
@@ -400,4 +432,11 @@ flex-direction: column;
     height: 600px;
     border-radius: 10px;
 
+}
+
+.popup {
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 41%;
+  position: absolute;
 }
