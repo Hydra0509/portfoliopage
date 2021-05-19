@@ -8,7 +8,7 @@
 
 html {
   background-attachment: fixed;
-  background-image: url('./images/gradientbackground.svg');
+  background-image: url('./images/gradientbackground8.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -242,7 +242,8 @@ header h1 {
   text-decoration: underline overline;
   text-underline-offset: 0.35em;
 }
-.bodyContainer .contactme {
+ .contactme {
+  color: white;
   font-size: 60px;
   display: flex;
   justify-content: center;
