@@ -17,7 +17,7 @@ function App() {
     <Header />
     	<Switch>
        		<Route path="/portfoliopage" exact component={Body} />
-       		 <Route path="/about"  component={body2} />
+       		 <Route path="/about" component={body2} />
     	</Switch>
     </>
     </Router>
