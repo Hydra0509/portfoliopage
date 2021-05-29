@@ -5,9 +5,9 @@ export default function Header() {
 
 return (
 	<>
-	<Link className="orot" to="/">Orovecz Tamás</Link>
+	<Link className="orot" to="/portfoliopage">Orovecz Tamás</Link>
 	<header className="headertop">
-	<Link className="headerbuttons" to="/">Home</Link>
+	<Link className="headerbuttons" to="/portfoliopage">Home</Link>
 	<Link className="headerbuttons" to="/about">About</Link>
 	<a className="headerbuttons" target="_blank" href="https://www.instagram.com/thomm.design/">Instagram</a>
 	</header>
