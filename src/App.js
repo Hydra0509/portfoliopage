@@ -16,7 +16,7 @@ function App() {
     <>
     <Header />
     	<Switch>
-       		<Route path="/" exact component={Body} />
+       		<Route path="/portfoliopage" exact component={Body} />
        		 <Route path="/about"  component={body2} />
     	</Switch>
     </>
