@@ -40,10 +40,8 @@ return (
 
 		<div className="bodyContainer" >
 			<div>
-				<h1 className="aboutme">ABOUT ME</h1>
 					<div className="paddingbetween"></div>
 						<div style={divstyle} className="bodycontentone">
-							<h1 className="divtitle">Cím/valami szöveg</h1>
 								<ImageSwiper />
 									<br></br>
 										<button className="readmorebutton" onClick={() => toggleActivate()}>Read more</button>

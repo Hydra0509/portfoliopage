@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 * {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
+  font-family: 'Cutive Mono', monospace;
 }
 
 html {
-  background-attachment: fixed;
-  background-image: url('./images/gradientbackground8.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background:white;
 }
 
 ::-webkit-scrollbar {
@@ -32,75 +29,29 @@ html {
 }
 
 header {
-  width: 100%;
+  padding-top: 50px;
+  width: 20%;
   display:flex;
-  justify-content: center;
-  color:#ffff;
-  margin-right: 0px;
-  margin-left: 0px;
-  background-image: url('./images/pictureskull.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  backgronud-position: center;
-  background-size: cover;
-  -webkit-transition: .9s ease;
-  transition: .9s ease;
-  height: 100vh;
-  font-size: 2em;
-  font-family: 'Roboto', sans-serif;
-  flex-direction: column;
-  user-select: none;
+  float: right;
 }
 
-.p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-   background:transparent;
-    animation: fadeIn ease-in  6s;
-   -webkit-animation: fadeIn ease-in 6s;
-   height: 30px;
-   padding-top: 50px;
-
- }
-
-
-header h1 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-    background:transparent;
-    animation: fadeIn ease-out 5s;
-    -webkit-animation: fadeIn ease-out 5s;
-
+.headerbuttons {
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
 }
 
-@keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+.headerbuttons:hover {
+  color:rgb(66, 135, 245);
+  transition: 0.5s;
 }
 
-@-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+.orot {
+  text-decoration: none;
+  color:black;
+  font-size: 35px;
+  padding:50px;
 }
-
-@-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-
 
 .divarrow {
   display: flex;
@@ -125,22 +76,42 @@ header h1 {
   padding:0;
 }
 
-.section2 {
-  display: inline-block;
-  width: 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url(./images/gradientbackground3.svg);
-  height: 400px;
+.bodyimages{
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.section3 {
-  display: inline-block;
-  width: 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url(./images/gradientbackground2.svg);
-  height: 400px;
+
+.bodyimages2{
+    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bodyimages3{
+    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.section {
+  margin:0px;
+  width: 475px;
+  height: 475px;
+}
+
+.section:hover {
+  cursor: pointer;
+  transition: 1s;
+  filter: brightness(1.15);
 }
 
 .readmorebutton {
@@ -221,27 +192,6 @@ header h1 {
   }
 
 
-  .loremone {
-  position: absolute;
-  box-sizing: border-box;
-  position: relative;
-  text-align: center;
-  color: #ffff;
-  width: 700px;
-  bottom: 500px;
-  margin-left: 150px;
-  font-size: 25px;
-  user-select: none;
-  }
-
-.bodyContainer .aboutme {
-  font-size: 80px;
-  display: flex;
-  justify-content: center;
-  user-select: none;
-  text-decoration: underline overline;
-  text-underline-offset: 0.35em;
-}
  .contactme {
   color: white;
   font-size: 60px;

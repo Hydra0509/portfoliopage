@@ -3,10 +3,10 @@ import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
 import SwiperCore, { Navigation, Pagination,Lazy } from 'swiper';
 import pictureskull from './images/pictureskull.jpg'
-import gradientbackground1 from './images/gradientbackground1.svg'
-import gradientbackground2 from './images/gradientbackground2.svg'
-import gradientbackground3 from './images/gradientbackground3.svg'
-import gradientbackground4 from './images/gradientbackground4.svg'
+import gradientbackground1 from './images/previewpic3.png'
+import gradientbackground2 from './images/previewpic1.png'
+import gradientbackground3 from './images/previewpic2.png'
+import gradientbackground4 from './images/previewpic5.png'
 
 const SliderData = [
 {
