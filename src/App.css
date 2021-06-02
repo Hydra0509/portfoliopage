@@ -32,6 +32,7 @@ header {
   padding-top: 50px;
   width: 20%;
   display:flex;
+  flex-wrap: wrap;
   float: right;
 }
 
@@ -66,6 +67,8 @@ header {
   width: 100%;
 }
 
+.wrapper
+
 .section1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -79,10 +82,11 @@ header {
 .bodyimages{
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-top: 100px;
 }
 
 
@@ -90,14 +94,16 @@ header {
     justify-content: center;
   align-items: center;
   display: flex;
+    flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
 }
 
 .bodyimages3{
-    justify-content: center;
+  justify-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
 }

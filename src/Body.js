@@ -17,23 +17,24 @@ import section11pic from "./images/previewpic11.png"
 export default function Bodypart() {
 
 	return (
-				<div>
+				<div className="wrapper">
 				<div className="bodyimages">
-						<img className="section" src={section3pic}></img>
-						<img className="section" src={section11pic}></img>
-						<img className="section" src={section1pic}></img>
-						<img className="section" src={section4pic}></img>
+						<div><img className="section" src={section3pic}></img></div>
+						<div><img className="section" src={section11pic}></img></div>
+						<div><img className="section" src={section1pic}></img></div>
+						<div><img className="section" src={section4pic}></img></div>
 				</div>
 				<div className="bodyimages2">
-						<img className="section" src={section5pic}></img>
-						<img className="section" src={section6pic}></img>
-						<img className="section" src={section7pic}></img>
-						<img className="section" src={section8pic}></img>
+						<div><img className="section" src={section5pic}></img></div>
+						<div><img className="section" src={section6pic}></img></div>
+						<div><img className="section" src={section7pic}></img></div>
+						<div><img className="section" src={section8pic}></img></div>
 				</div>
 				<div className="bodyimages3">
-						<img className="section" src={section9pic}></img>
-						<img className="section" src={section10pic}></img>
-						<img className="section" src={section2pic}></img>
+						<div><img className="section" src={section9pic}></img></div>
+						<div><img className="section" src={section10pic}></img></div>
+						<div><img className="section" src={section2pic}></img></div>
+						<div><img className="section" src={section8pic}></img></div>
 				</div>
 				</div>
 		)
