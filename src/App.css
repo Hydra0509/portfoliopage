@@ -29,7 +29,7 @@ html {
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 100px;
   width: 20%;
   display:flex;
   flex-wrap: wrap;
@@ -47,7 +47,9 @@ header {
   transition: 0.5s;
 }
 
-.orot {
+.kntur {
+  width: 220px;
+  height: 100px;
   text-decoration: none;
   color:black;
   font-size: 35px;
@@ -76,7 +78,6 @@ header {
   background-size: cover;
   background-image: url('./images/pictureskull.jpg');
   height: 400px;
-  padding:0;
 }
 
 .bodyimages{
@@ -87,6 +88,7 @@ header {
   flex-direction: row;
   width: 100%;
   padding-top: 100px;
+  margin:0px;
 }
 
 
@@ -97,6 +99,7 @@ header {
     flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+    margin:0px;
 }
 
 .bodyimages3{
@@ -106,6 +109,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+    margin:0px;
 }
 
 .section {
@@ -116,8 +120,8 @@ header {
 
 .section:hover {
   cursor: pointer;
+  transform: scale(1.02);
   transition: 1s;
-  filter: brightness(1.15);
 }
 
 .readmorebutton {

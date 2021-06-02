@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from "react-router-dom";
+import kntur from './images/KNTUR.png'
 
 export default function Header() {
 
 return (
 	<>
-	<Link className="orot" to="/portfoliopage">Orovecz Tamás</Link>
+	<Link to="/portfoliopage"><img src={kntur} className="kntur" /></Link>
 	<header className="headertop">
 	<Link className="headerbuttons" to="/portfoliopage">Home</Link>
 	<Link className="headerbuttons" to="/about">About</Link>
