@@ -17,25 +17,55 @@ import section11pic from "./images/previewpic11.png"
 export default function Bodypart() {
 
 	return (
-				<div className="wrapper">
-				<div className="bodyimages">
-						<div><img className="section" src={section3pic}></img></div>
-						<div><img className="section" src={section11pic}></img></div>
-						<div><img className="section" src={section1pic}></img></div>
-						<div><img className="section" src={section4pic}></img></div>
-				</div>
-				<div className="bodyimages2">
-						<div><img className="section" src={section5pic}></img></div>
-						<div><img className="section" src={section6pic}></img></div>
-						<div><img className="section" src={section7pic}></img></div>
-						<div><img className="section" src={section8pic}></img></div>
-				</div>
-				<div className="bodyimages3">
-						<div><img className="section" src={section9pic}></img></div>
-						<div><img className="section" src={section10pic}></img></div>
-						<div><img className="section" src={section2pic}></img></div>
-						<div><img className="section" src={section8pic}></img></div>
-				</div>
-				</div>
+		<div  className="bodyimages">
+						<div className="picturediv">
+								<img className="section" src={section3pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section11pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section1pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section4pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section5pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section6pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section7pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section8pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section9pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section10pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section2pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+					<div className="picturediv">
+								<img className="section" src={section8pic}></img>
+								<div className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+					</div>
+		</div>
 		)
 }

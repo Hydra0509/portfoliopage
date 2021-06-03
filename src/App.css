@@ -48,7 +48,7 @@ header {
 }
 
 .kntur {
-  width: 220px;
+  width: 250px;
   height: 100px;
   text-decoration: none;
   color:black;
@@ -69,8 +69,6 @@ header {
   width: 100%;
 }
 
-.wrapper
-
 .section1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -87,42 +85,49 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 100px;
-  margin:0px;
-}
-
-
-.bodyimages2{
-    justify-content: center;
-  align-items: center;
-  display: flex;
-    flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-    margin:0px;
-}
-
-.bodyimages3{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-    margin:0px;
 }
 
 .section {
-  margin:0px;
+  position: relative;
   width: 475px;
   height: 475px;
 }
 
-.section:hover {
+.picturediv {
+    margin: 0px;
+  padding:0px;
+  width: 475px;
+  height: 475px;
+}
+
+.picturediv:hover .section {
   cursor: pointer;
-  transform: scale(1.02);
+  filter: brightness(0.5);
   transition: 1s;
 }
+
+.picturediv:hover .picturetext {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  width: 475px;
+  height: 475px;
+   transition: opacity .2s, visibility .2s;
+}
+
+.picturetext {
+  transform: translate(-0%, -70%);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center; 
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+}
+
+
+
 
 .readmorebutton {
   display: flex;
