@@ -56,17 +56,10 @@ header {
   padding:50px;
 }
 
-.divarrow {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  font-size: 100px;
-  color: white;
 
-}
 
-.bodycontentone {
-  width: 100%;
+.divstyleone {
+  width: 50%;
 }
 
 .section1 {
@@ -86,6 +79,23 @@ header {
   flex-direction: row;
   width: 100%;
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
 
 .section {
   position: relative;
