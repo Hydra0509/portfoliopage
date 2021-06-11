@@ -19,7 +19,7 @@ import section11pic from "./images/previewpic11.png"
 
 Modal.setAppElement('#root')
 export default function Bodypart() {
-const [modalIsOpen,setModalIsOpen] = useState(false)
+const [modalIsOpen1,setModalIsOpen1] = useState(false)
 const [modalIsOpen2,setModalIsOpen2] = useState(false)
 const [modalIsOpen3,setModalIsOpen3] = useState(false)
 const [modalIsOpen4,setModalIsOpen4] = useState(false)
@@ -79,7 +79,7 @@ const swiperModalStyles = {
     position:'fixed',
     zIndex:'1' 	}
 }
-
+const [swiperModalIsOpen1,setSwiperModalIsOpen1] = useState(false)
 const [swiperModalIsOpen2,setSwiperModalIsOpen2] = useState(false)
 const [swiperModalIsOpen3,setSwiperModalIsOpen3] = useState(false)
 const [swiperModalIsOpen4,setSwiperModalIsOpen4] = useState(false)
@@ -91,6 +91,10 @@ const [swiperModalIsOpen9,setSwiperModalIsOpen9] = useState(false)
 const [swiperModalIsOpen10,setSwiperModalIsOpen10] = useState(false)
 const [swiperModalIsOpen11,setSwiperModalIsOpen11] = useState(false)
 const [swiperModalIsOpen12,setSwiperModalIsOpen12] = useState(false)
+
+function toggleActivate1() {
+	setSwiperModalIsOpen1(true)
+}
 
 function toggleActivate2() {
 	setSwiperModalIsOpen2(true)
@@ -139,6 +143,10 @@ function toggleActivate12() {
 	return (
 		<div>
 
+		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen1} onRequestClose={() => setSwiperModalIsOpen1(false)} style={swiperModalStyles}>
+		<div><ImageSwiper2 /></div>
+		</Modal>
+
 		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen2} onRequestClose={() => setSwiperModalIsOpen2(false)} style={swiperModalStyles}>
 		<div><ImageSwiper2 /></div>
 		</Modal>
@@ -183,82 +191,82 @@ function toggleActivate12() {
 		<div><ImageSwiper12 /></div>
 		</Modal>
 
-		<Modal closeTimeoutMS={500} isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}  style={modalStyles}>
+		<Modal closeTimeoutMS={500} isOpen={modalIsOpen1} onRequestClose={() => setModalIsOpen1(false)}  style={modalStyles}>
 		<h2>THIS IS THE TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img onClick= {() => toggleActivate2() }  style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img onClick= {() => toggleActivate1() }  style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen2} onRequestClose={() => setModalIsOpen2(false)}  style={modalStyles}>
 		<h2>THIS IS THE SECOND TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img  onClick= {() => toggleActivate3() } style={{ cursor:'zoom-in' }}  src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate2() } style={{ cursor:'zoom-in' }}  src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen3} onRequestClose={() => setModalIsOpen3(false)}  style={modalStyles}>
 		<h2>THIS IS THE 3 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate3()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen4} onRequestClose={() => setModalIsOpen4(false)}  style={modalStyles}>
 		<h2>THIS IS THE 4 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate4()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen5} onRequestClose={() => setModalIsOpen5(false)}  style={modalStyles}>
 		<h2>THIS IS THE 5 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate5()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen6} onRequestClose={() => setModalIsOpen6(false)}  style={modalStyles}>
 		<h2>THIS IS THE 6 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate6()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen7} onRequestClose={() => setModalIsOpen7(false)}  style={modalStyles}>
 		<h2>THIS IS THE 7 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate7()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen8} onRequestClose={() => setModalIsOpen8(false)}  style={modalStyles}>
 		<h2>THIS IS THE 8 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate8()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen9} onRequestClose={() => setModalIsOpen9(false)}  style={modalStyles}>
 		<h2>THIS IS THE 9 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate9()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen10} onRequestClose={() => setModalIsOpen10(false)}  style={modalStyles}>
 		<h2>THIS IS THE 10 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate10()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen11} onRequestClose={() => setModalIsOpen11(false)}  style={modalStyles}>
 		<h2>THIS IS THE 11 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img  onClick= {() => toggleActivate11()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen12} onRequestClose={() => setModalIsOpen12(false)}  style={modalStyles}>
 		<h2>THIS IS THE 12 TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img onClick= {() => toggleActivate12()} style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
 		</Modal>
 
 		<div  className="bodyimages">
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen(true)} className="section" src={section3pic}></img>
-								<div onClick={() => setModalIsOpen(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+								<img onClick={() => setModalIsOpen1(true)} className="section" src={section3pic}></img>
+								<div onClick={() => setModalIsOpen1(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
 								<img onClick={() => setModalIsOpen2(true)} className="section" src={section11pic}></img>
