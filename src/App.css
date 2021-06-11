@@ -39,7 +39,7 @@ header {
 .headerbuttons {
   text-decoration: none;
   color:black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .headerbuttons:hover {
@@ -82,18 +82,20 @@ header {
 
 .ReactModal__Overlay {
   opacity: 0;
-  transform: translateX(500px);
   transition: all 500ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
-  transform: translateX(0px);
+
 }
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
-  transform: translateX(-100px);
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
 }
 
 
@@ -273,79 +275,25 @@ header {
     z-index:7;  
   }
 
-  .navbar:hover {
-    width: 60px;
-    height: 230px;
-  }
-
-  .navbar ul {
-    display: flex;
-   justify-content:center;
-   flex-direction: column;
-    top: 0;
-    left: 0;
-    width: 150%;
-  }
-
-  .navbar ul li {
-flex-direction: column;
-    top: 15px;
-    font-weight: bold;
-     display: flex;
-   justify-content: flex-start;
-    width: 100%;
-    list-style: none;
-    background:black;
-      background:rgba(240, 145, 39, 1);;
-  }
-
-
-   .navbar ul li .navbaricondown {
-    font-size: 50px;
-   display: flex;
-   flex-direction: column;
-    min-width: 60px;
-    height: 70px;
-    top: 60px;
-    text-align: center;
-    border:0;
-    outline: none;
-    background: rgba(240, 145, 39, 1);
-
-  }
-
-   .navbar ul li .navbariconup {
-    font-size: 50px;
-   display: flex;
-  flex-direction: column;
-    min-width: 60px;
-    height: 70px;
-    line-height: 90px;
-    border:0;
-    outline: none;
-    background: rgba(240, 145, 39, 1);
-  }
-
 
 
 .footer {
-  background-image: url('./images/footerimage.svg');
+  background:White;
   display: flex;
+  flex-wrap: wrap;
   height: 200px;
+  width: 100%;
 }
 
-.footer h3 {
-  display: flex;
-  z-index: 11;
-
-}
 
 .footer ul {
   text-decoration: none;
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-content: center;
   width: 100%;
-  margin-left: 70px;
+  margin: 40px 0px 50px 0px ;
 }
 
 .emaillogo {
@@ -394,6 +342,7 @@ flex-direction: column;
 .swiper-container {
   justify-content: center;
    display: flex;
+   flex-wrap: wrap;
     width: 1000px;
     height: 600px;
     border-radius: 10px;
@@ -404,6 +353,7 @@ flex-direction: column;
   align-items: center;
   justify-content: center;
    display: flex;
+      flex-wrap: wrap;
     width: 1000px;
     height: 600px;
     border-radius: 10px;

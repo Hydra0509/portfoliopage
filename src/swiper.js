@@ -31,6 +31,261 @@ const SliderData = [
 }
 ]
 
+
+const SliderData2 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground3,
+	id: 2
+},
+{
+	image: gradientbackground4,
+	id: 3
+},
+{
+	image: gradientbackground2,
+	id: 4
+},
+{
+	image: gradientbackground1,
+	id: 5
+}
+]
+
+const SliderData3 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData4 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData5 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData6 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData7 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData8 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData9 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData10 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData11 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+const SliderData12 = [
+{
+	image: pictureskull,
+	id: 1
+},
+{
+	image: gradientbackground2,
+	id: 2
+},
+{
+	image: gradientbackground1,
+	id: 3
+},
+{
+	image: gradientbackground3,
+	id: 4
+},
+{
+	image: gradientbackground4,
+	id: 5
+}
+]
+
+
 SwiperCore.use([Pagination,Navigation,Lazy])
 
 export default function ImageSwiper() {
@@ -47,6 +302,258 @@ export default function ImageSwiper() {
       	<SwiperSlide className="imageone" key={SliderData.id}>
       		<div>
       		<img className="imageone" src={SliderData.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper2() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData2.map( SliderData2 => (
+      	<SwiperSlide className="imageone" key={SliderData2.id}>
+      		<div>
+      		<img className="imageone" src={SliderData2.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper3() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData3.map( SliderData3 => (
+      	<SwiperSlide className="imageone" key={SliderData3.id}>
+      		<div>
+      		<img className="imageone" src={SliderData3.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper4() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData4.map( SliderData4 => (
+      	<SwiperSlide className="imageone" key={SliderData4.id}>
+      		<div>
+      		<img className="imageone" src={SliderData4.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper5() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData5.map( SliderData5 => (
+      	<SwiperSlide className="imageone" key={SliderData5.id}>
+      		<div>
+      		<img className="imageone" src={SliderData5.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper6() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData6.map( SliderData6 => (
+      	<SwiperSlide className="imageone" key={SliderData6.id}>
+      		<div>
+      		<img className="imageone" src={SliderData6.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper7() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData7.map( SliderData7 => (
+      	<SwiperSlide className="imageone" key={SliderData7.id}>
+      		<div>
+      		<img className="imageone" src={SliderData7.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper8() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData8.map( SliderData8 => (
+      	<SwiperSlide className="imageone" key={SliderData8.id}>
+      		<div>
+      		<img className="imageone" src={SliderData8.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper9() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData9.map( SliderData9 => (
+      	<SwiperSlide className="imageone" key={SliderData9.id}>
+      		<div>
+      		<img className="imageone" src={SliderData9.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper10() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData10.map( SliderData10 => (
+      	<SwiperSlide className="imageone" key={SliderData10.id}>
+      		<div>
+      		<img className="imageone" src={SliderData10.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper11() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData11.map( SliderData11 => (
+      	<SwiperSlide className="imageone" key={SliderData11.id}>
+      		<div>
+      		<img className="imageone" src={SliderData11.image} />
+      		</div>
+      	</SwiperSlide>
+      	)) }
+
+
+       </Swiper>
+  );
+};
+
+export function ImageSwiper12() {
+  return (
+    <Swiper
+      type={'progressbar'}
+      loop = {true}
+      navigation={{ clickable: true }}
+      pagination={{ clickable: true}} 
+      spaceBetween={50}
+      slidesPerView={1}
+    >
+      { SliderData12.map( SliderData12 => (
+      	<SwiperSlide className="imageone" key={SliderData12.id}>
+      		<div>
+      		<img className="imageone" src={SliderData12.image} />
       		</div>
       	</SwiperSlide>
       	)) }
