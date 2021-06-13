@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import { ImageSwiper, ImageSwiper2,ImageSwiper3,ImageSwiper4,ImageSwiper5,ImageSwiper6,ImageSwiper7,ImageSwiper8,ImageSwiper9,ImageSwiper10,ImageSwiper11,ImageSwiper12 } from './swiper.js'
+import {ImageSwiper2,ImageSwiper3,ImageSwiper4,ImageSwiper5,ImageSwiper6,ImageSwiper7,ImageSwiper8,ImageSwiper9,ImageSwiper10,ImageSwiper11,ImageSwiper12 } from './swiper.js'
+import ImageSwiper from './swiper.js'
 import Footer from './Footer'
 import AboutMe from './Aboutme'
 import Modal from 'react-modal';
-import { Fade, Zoom } from "react-awesome-reveal";
 import section1pic from "./images/previewpic1.png"
 import section2pic from "./images/previewpic2.png"
 import section3pic from "./images/previewpic3.png"
@@ -15,6 +15,9 @@ import section8pic from "./images/previewpic8.png"
 import section9pic from "./images/previewpic9.png"
 import section10pic from "./images/previewpic10.png"
 import section11pic from "./images/previewpic11.png"
+
+
+
 
 
 Modal.setAppElement('#root')
@@ -69,6 +72,8 @@ const swiperModalStyles = {
     zIndex:'1'
   },
   		overlay : {
+  	display:'flex',
+    flexWrap: 'wrap',
   	backgroundColor: 'rgba(50, 50, 50, 0.70)',
   	position: 'fixed',
     top: '0',
@@ -144,7 +149,7 @@ function toggleActivate12() {
 		<div>
 
 		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen1} onRequestClose={() => setSwiperModalIsOpen1(false)} style={swiperModalStyles}>
-		<div><ImageSwiper2 /></div>
+		<div style={{display:'flex', flexWrap:'wrap'}}><ImageSwiper /></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen2} onRequestClose={() => setSwiperModalIsOpen2(false)} style={swiperModalStyles}>
@@ -194,7 +199,7 @@ function toggleActivate12() {
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen1} onRequestClose={() => setModalIsOpen1(false)}  style={modalStyles}>
 		<h2>THIS IS THE TITLE</h2>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		<div><img onClick= {() => toggleActivate1() }  style={{ cursor:'zoom-in' }} src={section3pic}></img></div>
+		<div><img onClick= {() => toggleActivate1() }  style={{ cursor:'zoom-in'}} src={section3pic}></img></div>
 		</Modal>
 
 		<Modal closeTimeoutMS={500} isOpen={modalIsOpen2} onRequestClose={() => setModalIsOpen2(false)}  style={modalStyles}>
