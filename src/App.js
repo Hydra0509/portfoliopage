@@ -13,7 +13,7 @@ function App() {
   return (
   	<Router>
     <>
-    <Header />
+    <Header/>
     	<Switch>
        		<Route path="/portfoliopage" exact component={Body} />
        		 <Route path="/about" component={AboutMe} />

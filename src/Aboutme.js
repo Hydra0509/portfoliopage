@@ -5,7 +5,7 @@ export default function AboutMe() {
 
 
 return (
-	<div>Hi</div>
+	<div>Hi there</div>
 	)
 }
 
