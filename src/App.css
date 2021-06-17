@@ -42,6 +42,7 @@ header {
 .headerbuttons:hover {
   color:rgb(66, 135, 245);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .kntur {
@@ -53,7 +54,31 @@ header {
   padding:50px;
 }
 
+.preloader {
+  margin-top: 230px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  animation:loading;
+  animation-duration: 4.5s;
+}
 
+@keyframes loading {
+  from {background-color: white;}
+  to {opacity:0}
+}
+
+@keyframes afterpreloadtransition
+{
+  from {opacity:0}
+  to {opacity :1}
+}
+
+.afterpreload {
+  animation:afterpreloadtransition;
+  animation-duration:1.5s;
+}
 
 .divstyleone {
   width: 50%;

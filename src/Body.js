@@ -1,8 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {ImageSwiper2,ImageSwiper3,ImageSwiper4,ImageSwiper5,ImageSwiper6,ImageSwiper7,ImageSwiper8,ImageSwiper9,ImageSwiper10,ImageSwiper11,ImageSwiper12 } from './swiper.js'
 import ImageSwiper from './swiper.js'
 import Footer from './Footer'
-import AboutMe from './Aboutme'
+import Header from './Header'
 import Modal from 'react-modal';
 import section1pic from "./images/previewpic1.png"
 import section2pic from "./images/previewpic2.png"
@@ -15,6 +15,7 @@ import section8pic from "./images/previewpic8.png"
 import section9pic from "./images/previewpic9.png"
 import section10pic from "./images/previewpic10.png"
 import section11pic from "./images/previewpic11.png"
+import kntur from './images/KNTUR.png'
 
 
 
@@ -145,9 +146,19 @@ function toggleActivate12() {
 	setSwiperModalIsOpen12(true)
 }
 
-	return (
-		<div>
+const [preloader,setPreloader] = useState(true)
 
+useEffect(() => {
+	setTimeout(() => setPreloader(false),3000)
+	return function clearPreloader() {
+	}
+},[])
+
+	return (
+		<>
+		{preloader === false ? (
+		<div className="afterpreload">
+		<Header/>
 		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen1} onRequestClose={() => setSwiperModalIsOpen1(false)} style={swiperModalStyles}>
 		<div style={{display:'flex', flexWrap:'wrap'}}><ImageSwiper /></div>
 		</Modal>
@@ -319,6 +330,11 @@ function toggleActivate12() {
 					</div>
 					<Footer />
 		</div>
-		</div>
+		</div>) : (
+			<div>
+				<img src={kntur} className="preloader" />
+			</div>
+		)}
+		</>
 		)
 }
