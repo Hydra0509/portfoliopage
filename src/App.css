@@ -11,6 +11,13 @@ html {
   background:white;
 }
 
+@media (min-width: 450px ) and (max-width:850px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -31,6 +38,16 @@ header {
   display:flex;
   flex-wrap: wrap;
   float: right;
+}
+
+@media (min-width: 360px ) and (max-width:850px) {
+  header {
+    padding-bottom: 20px;
+    width:45%;
+    display:grid;
+    align-items: center;
+    justify-items:center;
+  }
 }
 
 .headerbuttons {
@@ -54,6 +71,14 @@ header {
   padding:50px;
 }
 
+@media (min-width: 360px ) and (max-width:850px) {
+  .kntur {
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+  }
+}
+
 .preloader {
   margin-top: 230px;
   display: flex;
@@ -63,6 +88,19 @@ header {
   animation:loading;
   animation-duration: 4.5s;
 }
+
+@media (min-width: 360px) and (max-width:850px) {
+  .preloader {
+    width:200px;
+    height: 200px;
+  margin-top: 230px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  animation:loading;
+  animation-duration: 4.5s;
+}}
 
 @keyframes loading {
   from {background-color: white;}
@@ -125,8 +163,11 @@ header {
   overflow-y: hidden;
 }
 
-
 .section {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-wrap: wrap;
   position: relative;
   width: 475px;
   height: 475px;
