@@ -64,9 +64,9 @@ const modalStyles = {
 
 const swiperModalStyles = {
 	  content : {
-	  	top: '50px',
-    width: '80%',
-    height: '80%',
+	  	top: '130px',
+    width: '1000px',
+    height: '600px',
     display:'flex',
     justifyContent:'center',
     alignContent:'center',

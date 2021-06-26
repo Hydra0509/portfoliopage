@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
+import ReactImageAppear from 'react-image-appear';
 import SwiperCore, { Navigation, Pagination,Lazy } from 'swiper';
 import pictureskull from './images/pictureskull.jpg'
 import gradientbackground1 from './images/previewpic3.png'
@@ -301,7 +302,7 @@ export default function ImageSwiper() {
       { SliderData.map( SliderData => (
       	<SwiperSlide className="imageone" key={SliderData.id}>
       		<div>
-      		<img className="imageone" src={SliderData.image} />
+      		<ReactImageAppear className="imageone" src={SliderData.image} animationDuration="0.5s" />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -324,7 +325,7 @@ export function ImageSwiper2() {
       { SliderData2.map( SliderData2 => (
       	<SwiperSlide className="imageone" key={SliderData2.id}>
       		<div>
-      		<img className="imageone" src={SliderData2.image} />
+      		<ReactImageAppear className="imageone" src={SliderData2.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -347,7 +348,7 @@ export function ImageSwiper3() {
       { SliderData3.map( SliderData3 => (
       	<SwiperSlide className="imageone" key={SliderData3.id}>
       		<div>
-      		<img className="imageone" src={SliderData3.image} />
+      		<ReactImageAppear className="imageone" src={SliderData3.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -370,7 +371,7 @@ export function ImageSwiper4() {
       { SliderData4.map( SliderData4 => (
       	<SwiperSlide className="imageone" key={SliderData4.id}>
       		<div>
-      		<img className="imageone" src={SliderData4.image} />
+      		<ReactImageAppear className="imageone" src={SliderData4.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -393,7 +394,7 @@ export function ImageSwiper5() {
       { SliderData5.map( SliderData5 => (
       	<SwiperSlide className="imageone" key={SliderData5.id}>
       		<div>
-      		<img className="imageone" src={SliderData5.image} />
+      		<ReactImageAppear className="imageone" src={SliderData5.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -416,7 +417,7 @@ export function ImageSwiper6() {
       { SliderData6.map( SliderData6 => (
       	<SwiperSlide className="imageone" key={SliderData6.id}>
       		<div>
-      		<img className="imageone" src={SliderData6.image} />
+      		<ReactImageAppear className="imageone" src={SliderData6.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -439,7 +440,7 @@ export function ImageSwiper7() {
       { SliderData7.map( SliderData7 => (
       	<SwiperSlide className="imageone" key={SliderData7.id}>
       		<div>
-      		<img className="imageone" src={SliderData7.image} />
+      		<ReactImageAppear className="imageone" src={SliderData7.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -462,7 +463,7 @@ export function ImageSwiper8() {
       { SliderData8.map( SliderData8 => (
       	<SwiperSlide className="imageone" key={SliderData8.id}>
       		<div>
-      		<img className="imageone" src={SliderData8.image} />
+      		<ReactImageAppear className="imageone" src={SliderData8.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -485,7 +486,7 @@ export function ImageSwiper9() {
       { SliderData9.map( SliderData9 => (
       	<SwiperSlide className="imageone" key={SliderData9.id}>
       		<div>
-      		<img className="imageone" src={SliderData9.image} />
+      		<ReactImageAppear className="imageone" src={SliderData9.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -508,7 +509,7 @@ export function ImageSwiper10() {
       { SliderData10.map( SliderData10 => (
       	<SwiperSlide className="imageone" key={SliderData10.id}>
       		<div>
-      		<img className="imageone" src={SliderData10.image} />
+      		<ReactImageAppear className="imageone" src={SliderData10.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -530,7 +531,7 @@ export function ImageSwiper11() {
       { SliderData11.map( SliderData11 => (
       	<SwiperSlide className="imageone" key={SliderData11.id}>
       		<div>
-      		<img className="imageone" src={SliderData11.image} />
+      		<ReactImageAppear className="imageone" src={SliderData11.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
@@ -553,7 +554,7 @@ export function ImageSwiper12() {
       { SliderData12.map( SliderData12 => (
       	<SwiperSlide className="imageone" key={SliderData12.id}>
       		<div>
-      		<img className="imageone" src={SliderData12.image} />
+      		<ReactImageAppear className="imageone" src={SliderData12.image}  animationDuration="0.5s"  />
       		</div>
       	</SwiperSlide>
       	)) }
