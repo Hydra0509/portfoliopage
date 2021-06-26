@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react'
+import ReactImageAppear from 'react-image-appear';
 import {ImageSwiper2,ImageSwiper3,ImageSwiper4,ImageSwiper5,ImageSwiper6,ImageSwiper7,ImageSwiper8,ImageSwiper9,ImageSwiper10,ImageSwiper11,ImageSwiper12 } from './swiper.js'
 import ImageSwiper from './swiper.js'
 import Footer from './Footer'
-import Header from './Header'
+import Aboutme from './Aboutme'
 import Modal from 'react-modal';
 import section1pic from "./images/previewpic1.png"
 import section2pic from "./images/previewpic2.png"
@@ -158,7 +159,7 @@ useEffect(() => {
 		<>
 		{preloader === false ? (
 		<div className="afterpreload">
-		<Header/>
+		<Aboutme/>
 		<Modal closeTimeoutMS={500} isOpen={swiperModalIsOpen1} onRequestClose={() => setSwiperModalIsOpen1(false)} style={swiperModalStyles}>
 		<div style={{display:'flex', flexWrap:'wrap'}}><ImageSwiper /></div>
 		</Modal>
@@ -281,51 +282,51 @@ useEffect(() => {
 
 		<div  className="bodyimages">
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen1(true)} className="section" src={section3pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen1(true)} className="section" src={section3pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen1(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen2(true)} className="section" src={section11pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen2(true)} className="section" src={section11pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen2(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen3(true)} className="section" src={section1pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen3(true)} className="section" src={section1pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen3(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen4(true)} className="section" src={section4pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen4(true)} className="section" src={section4pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen4(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen5(true)} className="section" src={section5pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen5(true)} className="section" src={section5pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen5(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen6(true)} className="section" src={section6pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen6(true)} className="section" src={section6pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen6(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen7(true)} className="section" src={section7pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen7(true)} className="section" src={section7pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen7(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen8(true)} className="section" src={section8pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen8(true)} className="section" src={section8pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen8(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen9(true)} className="section" src={section9pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen9(true)} className="section" src={section9pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen9(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen10(true)} className="section" src={section10pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen10(true)} className="section" src={section10pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen10(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen11(true)} className="section" src={section2pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen11(true)} className="section" src={section2pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen11(true)} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<div className="picturediv">
-								<img onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} className="section" src={section8pic}></img>
+								<ReactImageAppear onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 					<Footer />
