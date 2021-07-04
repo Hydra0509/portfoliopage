@@ -330,7 +330,6 @@ useEffect(() => {
 								<ReactImageAppear loader={loading} onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} animationDuration="1s"></ReactImageAppear>
 								<div onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
-					<Footer />
 		</div>
 		</div>) : (
 			<div>
