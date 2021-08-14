@@ -46,8 +46,8 @@ header {
 }
 
 .kntur {
-  width: 250px;
-  height: 100px;
+  width: 240px;
+  height: 90px;
   text-decoration: none;
   color:black;
   font-size: 35px;
@@ -134,15 +134,15 @@ header {
   display:flex;
   flex-wrap: wrap;
   position: relative;
-  width: 475px;
-  height: 475px;
+  width: 420px;
+  height: 420px;
 }
 
 .picturediv {
   margin: 0px;
   padding:0px;
-  width: 475px;
-  height: 475px;
+  width: 420px;
+  height: 420px;
 }
 
 .picturediv:hover .section {
@@ -169,58 +169,6 @@ header {
   color: white;
   font-size: 3rem;
   position: absolute;
-}
-
-.footer {
-  background:White;
-  display: flex;
-  flex-wrap: wrap;
-  height: 200px;
-  width: 100%;
-}
-
-
-.footer ul {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  margin: 40px 0px 50px 0px ;
-}
-
-.emaillogo {
-   width: 80px;
-  background: transparent;
-  cursor: pointer !important;
-}
-.emaillogo:hover {
-  transform: scale(1.10);
-  transition: all .5s ease-in-out;
-}
-
-
-.logo {
-  width: 90px;
-  background: transparent;
-  cursor: pointer;
-}
-
-.logo:hover {
-  transform: scale(1.10);
-  transition: all .5s ease-in-out;
-}
-
-.vimeologo {
-  width: 140px;
-  background: transparent;
-  user-select: none;
-}
-
-.vimeologo:hover {
-  transform: scale(1.10);
-  transition: all .5s ease-in-out;
 }
 
 .swiper-container {
