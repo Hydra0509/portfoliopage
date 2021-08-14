@@ -3,7 +3,6 @@ import ReactImageAppear from 'react-image-appear';
 import loading from './images/loading.gif'
 import {ImageSwiper2,ImageSwiper3,ImageSwiper4,ImageSwiper5,ImageSwiper6,ImageSwiper7,ImageSwiper8,ImageSwiper9,ImageSwiper10,ImageSwiper11,ImageSwiper12 } from './swiper.js'
 import ImageSwiper from './swiper.js'
-import Footer from './Footer'
 import Aboutme from './Aboutme'
 import Modal from 'react-modal';
 import section1pic from "./images/previewpic1.png"
@@ -327,7 +326,7 @@ useEffect(() => {
 					</div>
 					<div className="picturediv">
 								<ReactImageAppear loader={loading} onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} animationDuration="1s"></ReactImageAppear>
-								<div onClick={() => setModalIsOpen12(true)} className="section" src={section2pic} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
+								<div onClick={() => setModalIsOpen12(true)} className="section" className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
 					</div>
 		</div>
 		</div>) : (
