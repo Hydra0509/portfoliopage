@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import React, {useState} from 'react'
 import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
 import ReactImageAppear from 'react-image-appear';
@@ -9,6 +10,8 @@ import gradientbackground2 from './images/previewpic1.png'
 import gradientbackground3 from './images/previewpic2.png'
 import gradientbackground4 from './images/previewpic5.png'
 import loading from './images/loading.gif'
+import './SwiperModal.css'
+
 
 const SliderData = [
 {
@@ -290,8 +293,12 @@ const SliderData12 = [
 
 SwiperCore.use([Pagination,Navigation,Lazy])
 
+
 export default function ImageSwiper() {
+
   return (
+
+
     <Swiper
       type={'progressbar'}
       loop = {true}
@@ -300,6 +307,8 @@ export default function ImageSwiper() {
       spaceBetween={50}
       slidesPerView={1}
     >
+
+
       { SliderData.map( SliderData => (
       	<SwiperSlide className="imageone" key={SliderData.id}>
       		<div>
@@ -307,18 +316,19 @@ export default function ImageSwiper() {
       		</div>
       	</SwiperSlide>
       	)) }
-
-
        </Swiper>
   );
 };
+
+
+
 
 export function ImageSwiper2() {
   return (
     <Swiper
       type={'progressbar'}
       loop = {true}
-      navigation={{ clickable: true }}
+      navigation={{ clickable: true}}
       pagination={{ clickable: true}} 
       spaceBetween={50}
       slidesPerView={1}

@@ -1,4 +1,4 @@
-import './App.css';
+import "./Modal.css"
 import Body from './Body'
 import React, { useEffect} from 'react'
 import { useMediaQuery } from 'react-responsive'

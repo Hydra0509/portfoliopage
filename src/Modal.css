@@ -22,17 +22,18 @@ html {
 }
 
 header {
-  padding: 100px 80px 0px 0px;
-  width: 25%;
+  padding: 100px 75px 0px 0px;
+  width: 15%;
   display:flex;
   flex-wrap: wrap;
   float: right;
 }
 
 .headerbuttons {
+  font-weight: bold;
   text-decoration: none;
   color:black;
-  font-size: 25px;
+  font-size: 18px;
   user-select: none;
 }
 
@@ -47,36 +48,8 @@ header {
   height: 90px;
   text-decoration: none;
   color:black;
-  padding:30px 0px 30px 110px;
+  padding:30px 0px 30px 80px;
   user-select: none;
-}
-
-
-.preloader {
-  margin-top: 230px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  animation:loading;
-  animation-duration: 4s;
-}
-
-
-@keyframes loading {
-  from {background-color: white;}
-  to {opacity:0}
-}
-
-@keyframes afterpreloadtransition
-{
-  from {opacity:0}
-  to {opacity :1}
-}
-
-.afterpreload {
-  animation:afterpreloadtransition;
-  animation-duration:1.5s;
 }
 
 .divstyleone {
@@ -103,6 +76,7 @@ header {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
 }
 
 .ReactModal__Overlay {
@@ -120,14 +94,11 @@ header {
 }
 
 .ReactModal__Body--open {
-  position: relative;
 }
 
-.customOverlay {
-  background: rgba(36, 123, 160, 0.7);
-}
 
 .section {
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   display:flex;
@@ -135,13 +106,16 @@ header {
   position: relative;
   width: 420px;
   height: 420px;
+  z-index: -1;
 }
 
 .picturediv {
-  margin: 0px;
+  cursor: pointer;
+  margin: 10px;
   padding:0px;
   width: 420px;
   height: 420px;
+  overflow-y: hidden;
 }
 
 .picturediv:hover .section {
@@ -171,14 +145,12 @@ header {
 }
 
 .swiper-container {
-  top:400px;
   justify-content: center;
    display: flex;
    flex-wrap: wrap;
     width: 1000px;
     height: 600px;
     border-radius: 10px;
-    z-index: 2;
 
 }
 
@@ -190,13 +162,102 @@ header {
   width: 1000px;
   height: 600px;
   border-radius: 10px;
-  z-index: 2;
 
 }
 
-.popup {
-  font-style: italic;
-  font-size: 20px;
-  padding-left: 41%;
-  position: absolute;
+   .active-modal {
+    overflow-y: hidden;
 }
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.modal {
+  overflow-y: scroll;
+  animation: FadeIn ease 0.5s;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.842);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    width:85vw;
+    height: 85vh;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+

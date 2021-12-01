@@ -1,0 +1,73 @@
+.active-modal {
+    overflow-y: hidden;
+}
+
+@-moz-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+.modalimage, .overlayimage {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modalimage {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  animation: FadeIn ease 0.5s;
+}
+
+.overlayimage {
+    background: rgba(49, 49, 49, 0.842);
+}
+.modalimage-content {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%, -40%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    width:175vh;
+    height: 100vh;
+}
+
