@@ -13,7 +13,7 @@
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 @keyframes FadeIn {
@@ -78,7 +78,7 @@ animation: FadeIn ease 0.5s;
   line-height: 1.4;
   padding: 14px 28px;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .swiper-close-modal {

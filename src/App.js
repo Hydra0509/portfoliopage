@@ -1,36 +1,23 @@
 import "./Modal.css"
-import Body from './Body'
-import React, { useEffect} from 'react'
-import { useMediaQuery } from 'react-responsive'
-
-const useDesktopMediaQuery = () =>
-  useMediaQuery({ query: "(min-width: 1280px)" })
-
-const useTabletAndBelowMediaQuery = () =>
-  useMediaQuery({ query: "(max-width: 1279px)" })
-
-const Desktop = ({ children }) => {
-  const isDesktop = useDesktopMediaQuery()
-
-  return isDesktop ? children : null
-}
-
-const TabletAndBelow = ({ children }) => {
-  const isTabletAndBelow = useTabletAndBelowMediaQuery()
-
-  return isTabletAndBelow ? children : null
-}
-
+import React, {useState, useEffect, createContext} from 'react'
+import ModalImages from "./Modalimages";
+import ModalAboutme from "./ModalAboutme";
+import { ThemeProvider } from "./ThemeContext";
 
 function App() {
 	useEffect(() => {
    document.title = "Kntúr."
 }, []);
 
+
   return (
-    <>
-     <Body />
-    </>
+    
+    <ThemeProvider>
+      <ModalAboutme />
+        <div className="bodyimages">
+		  <ModalImages />
+		    </div>
+    </ThemeProvider>
   );
 }
 

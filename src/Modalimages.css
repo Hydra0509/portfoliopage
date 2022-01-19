@@ -47,12 +47,14 @@
     right: 0;
     bottom: 0;
     position: fixed;
+    color:rgb(32,33,36)
 }
 
 .modalimage {
   overflow-x: hidden;
   overflow-y: scroll;
   animation: FadeIn ease 0.5s;
+  z-index: 1;
 }
 
 .overlayimage {

@@ -1,8 +1,23 @@
 import React, {useState} from 'react';
 import "./Modal.css"
 import kntur from './images/KNTUR.png'
+import knturfeher from './images/knturfeher.png'
+import darkModeIcon from './images/darkmodeicon.png'
+import {useTheme, useThemeUpdate} from './ThemeContext'
+
+
 
 export default function ModalAboutme() {
+
+    const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
+    const themeStyles = {
+        background: darkTheme ? 'rgb(32,33,36)' : 'white',
+        color: darkTheme ? 'white' : 'black',
+        transition: '0.5s',
+        src: darkTheme ? knturfeher : kntur,
+    }
+
     
     const [modal,setModal] = useState(false);
 
@@ -19,8 +34,10 @@ export default function ModalAboutme() {
     }
 
     return (
-        <>
-        <img src={kntur} className="kntur" />
+        
+        <div style={themeStyles}>
+        <img className="darkmodetoggle" style={{width:'50px',height: '50px', cursor:'pointer' }} onClick={toggleTheme} src={darkModeIcon} />
+        <img src={themeStyles.src} className="kntur" />
 	<header className="headertop">
     <a className="headerbuttons" onClick={toggleModal}>About me</a>
     <a className="headerbuttons" target="_blank" href="https://www.instagram.com/thomm.design/">Instagram</a>
@@ -28,14 +45,14 @@ export default function ModalAboutme() {
         {modal && (
             <div className="modal">
             <div onClick={toggleModal} className="overlay">
-                <div className="modal-content">
+                <div style={themeStyles} className="modal-content">
                     <h2>Hello Modal</h2>
                     <p>idk</p>
                 </div>
             </div>    
         </div>
         )}
-        </>
+        </div>
 
 
 

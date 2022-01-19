@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState,useContext} from 'react';
+import {useTheme, useThemeUpdate} from './ThemeContext'
 import "./SwiperModal.css"
 import "./Modalimages.css"
 import section1pic from "./images/previewpic1.png"
@@ -163,10 +164,17 @@ export default function ModalImages() {
        root.classList.remove("active-modal")
     }
 
+    const darkTheme = useTheme()
+    const themeStyles = {
+        background: darkTheme ? 'rgb(32,33,36)' : 'white',
+        color: darkTheme ? 'white' : 'black',
+        transition: '0.5s'
+    }
+
 
     return (
         <>
-        <div className="bodyimages">
+        <div style={themeStyles} className="bodyimages">
             <div className="picturediv" onClick={toggleModal1}>
                     <ReactImageAppear onClick={toggleModal1} className="section" src={section1pic} animationDuration="1s"></ReactImageAppear>
                     <div onClick={toggleModal1} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
@@ -360,7 +368,7 @@ export default function ModalImages() {
         {modal1 && (
             <div className="modalimage">
             <div onClick={toggleModal1} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles} className="modalimage-content">
                     <h2>Hello Modal 1</h2>
                     <p>idk</p>
                         <img style={{ cursor: 'zoom-in' }} onClick={toggleSwiperModal1} src={section1pic}></img>
@@ -373,7 +381,7 @@ export default function ModalImages() {
         {modal2 && (
             <div className="modalimage">
             <div onClick={toggleModal2} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 2</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -387,7 +395,7 @@ export default function ModalImages() {
         {modal3 && (
             <div className="modalimage">
             <div onClick={toggleModal3} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 3</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -401,7 +409,7 @@ export default function ModalImages() {
         {modal4 && (
             <div className="modalimage">
             <div onClick={toggleModal4} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 4</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -415,7 +423,7 @@ export default function ModalImages() {
         {modal5 && (
             <div className="modalimage">
             <div onClick={toggleModal5} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 5</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -429,7 +437,7 @@ export default function ModalImages() {
         {modal6 && (
             <div className="modalimage">
             <div onClick={toggleModal6} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 6</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -443,7 +451,7 @@ export default function ModalImages() {
         {modal7 && (
             <div className="modalimage">
             <div onClick={toggleModal7} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles} className="modalimage-content">
                     <h2>Hello Modal 7</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -457,7 +465,7 @@ export default function ModalImages() {
         {modal8 && (
             <div className="modalimage">
             <div onClick={toggleModal8} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles} className="modalimage-content">
                     <h2>Hello Modal 8</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -471,7 +479,7 @@ export default function ModalImages() {
         {modal9 && (
             <div className="modalimage">
             <div onClick={toggleModal9} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 9</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -485,7 +493,7 @@ export default function ModalImages() {
         {modal10 && (
             <div className="modalimage">
             <div onClick={toggleModal10} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles} className="modalimage-content">
                     <h2>Hello Modal 10</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -498,7 +506,7 @@ export default function ModalImages() {
         {modal11 && (
             <div className="modalimage">
             <div onClick={toggleModal11} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 11</h2>
                     <p>idk</p>
                     <p>idk</p>
@@ -511,7 +519,7 @@ export default function ModalImages() {
         {modal12 && (
             <div className="modalimage">
             <div onClick={toggleModal12} className="overlayimage"></div>
-                <div className="modalimage-content">
+                <div style={themeStyles}  className="modalimage-content">
                     <h2>Hello Modal 12</h2>
                     <p>idk</p>
                     <p>idk</p>
