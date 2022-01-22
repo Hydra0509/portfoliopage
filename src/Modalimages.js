@@ -1,9 +1,8 @@
-import React, {useState,useContext} from 'react';
-import {useTheme, useThemeUpdate} from './ThemeContext'
+import React, {useState} from 'react';
+import {useTheme} from './ThemeContext'
 import "./SwiperModal.css"
 import "./Modalimages.css"
 import section1pic from "./images/previewpic1.jpg"
-import ReactImageAppear from 'react-image-appear'
 import section2pic from "./images/previewpic2.jpg"
 import section3pic from "./images/previewpic3.jpg"
 import section4pic from "./images/previewpic4.jpg"
@@ -176,83 +175,83 @@ export default function ModalImages() {
         <>
         <div style={themeStyles} className="bodyimages">
             <div className="picturediv" onClick={toggleModal1}>
-                    <ReactImageAppear onClick={toggleModal1} className="section" src={section1pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal1} className="section" src={section1pic}></img>
                     <div onClick={toggleModal1} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal2}>
-                    <ReactImageAppear onClick={toggleModal2} className="section" src={section2pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal2} className="section" src={section2pic}></img>
                     <div onClick={toggleModal2} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
                     <div className="picturediv" onClick={toggleModal3}>
-                    <ReactImageAppear onClick={toggleModal3} className="section" src={section3pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal3} className="section" src={section3pic}></img>
                     <div onClick={toggleModal3} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
                     <div className="picturediv" onClick={toggleModal4}>
-                    <ReactImageAppear onClick={toggleModal4} className="section" src={section4pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal4} className="section" src={section4pic}></img>
                     <div onClick={toggleModal4} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
             <div className="picturediv" onClick={toggleModal5}>
-                    <ReactImageAppear onClick={toggleModal5} className="section" src={section5pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal5} className="section" src={section5pic}></img>
                     <div onClick={toggleModal5} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal6}>
-                    <ReactImageAppear onClick={toggleModal6} className="section" src={section6pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal6} className="section" src={section6pic}></img>
                     <div onClick={toggleModal6} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal7}>
-                    <ReactImageAppear onClick={toggleModal7} className="section" src={section7pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal7} className="section" src={section7pic}></img>
                     <div onClick={toggleModal7} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal8}>
-                    <ReactImageAppear onClick={toggleModal8} className="section" src={section8pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal8} className="section" src={section8pic}></img>
                     <div onClick={toggleModal8} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal9}>
-                    <ReactImageAppear onClick={toggleModal9} className="section" src={section9pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal9} className="section" src={section9pic}></img>
                     <div onClick={toggleModal9} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal10}>
-                    <ReactImageAppear onClick={toggleModal10} className="section" src={section10pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal10} className="section" src={section10pic}></img>
                     <div onClick={toggleModal10} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal11}>
-                    <ReactImageAppear onClick={toggleModal11} className="section" src={section11pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal11} className="section" src={section11pic}></img>
                     <div onClick={toggleModal11} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
 
 
             <div className="picturediv" onClick={toggleModal12}>
-                    <ReactImageAppear onClick={toggleModal12} className="section" src={section11pic} animationDuration="1s"></ReactImageAppear>
+                    <img onClick={toggleModal12} className="section" src={section11pic}></img>
                     <div onClick={toggleModal12} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
         </div>
