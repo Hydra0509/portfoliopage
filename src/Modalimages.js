@@ -2,18 +2,18 @@ import React, {useState,useContext} from 'react';
 import {useTheme, useThemeUpdate} from './ThemeContext'
 import "./SwiperModal.css"
 import "./Modalimages.css"
-import section1pic from "./images/previewpic1.png"
-import ReactImageAppear from 'react-image-appear';
-import section2pic from "./images/previewpic2.png"
-import section3pic from "./images/previewpic3.png"
-import section4pic from "./images/previewpic4.png"
-import section5pic from "./images/previewpic5.png"
-import section6pic from "./images/previewpic6.png"
-import section7pic from "./images/previewpic7.png"
-import section8pic from "./images/previewpic8.png"
-import section9pic from "./images/previewpic9.png"
-import section10pic from "./images/previewpic10.png"
-import section11pic from "./images/previewpic11.png"
+import section1pic from "./images/previewpic1.jpg"
+import ReactImageAppear from 'react-image-appear'
+import section2pic from "./images/previewpic2.jpg"
+import section3pic from "./images/previewpic3.jpg"
+import section4pic from "./images/previewpic4.jpg"
+import section5pic from "./images/previewpic5.jpg"
+import section6pic from "./images/previewpic6.jpg"
+import section7pic from "./images/previewpic7.jpg"
+import section8pic from "./images/previewpic8.jpg"
+import section9pic from "./images/previewpic9.jpg"
+import section10pic from "./images/previewpic10.jpg"
+import section11pic from "./images/previewpic11.jpg"
 import ImageSwiper from './swiper'
 import ImageSwiper2 from './swiper'
 import ImageSwiper3 from './swiper'

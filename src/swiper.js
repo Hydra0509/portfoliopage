@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, {useState} from 'react'
 import 'swiper/swiper.scss';
 import 'swiper/swiper-bundle.css'
 import ReactImageAppear from 'react-image-appear';
 import SwiperCore, { Navigation, Pagination,Lazy } from 'swiper';
 import pictureskull from './images/pictureskull.jpg'
-import gradientbackground1 from './images/previewpic3.png'
-import gradientbackground2 from './images/previewpic1.png'
-import gradientbackground3 from './images/previewpic2.png'
-import gradientbackground4 from './images/previewpic5.png'
+import gradientbackground1 from './images/previewpic3.jpg'
+import gradientbackground2 from './images/previewpic1.jpg'
+import gradientbackground3 from './images/previewpic2.jpg'
+import gradientbackground4 from './images/previewpic5.jpg'
 import loading from './images/loading.gif'
 import './SwiperModal.css'
 

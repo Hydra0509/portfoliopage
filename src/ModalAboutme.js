@@ -3,6 +3,7 @@ import "./Modal.css"
 import kntur from './images/KNTUR.png'
 import knturfeher from './images/knturfeher.png'
 import darkModeIcon from './images/darkmodeicon.png'
+import lightModeIcon from './images/lightmodeicon.png'
 import {useTheme, useThemeUpdate} from './ThemeContext'
 
 
@@ -16,6 +17,7 @@ export default function ModalAboutme() {
         color: darkTheme ? 'white' : 'black',
         transition: '0.5s',
         src: darkTheme ? knturfeher : kntur,
+        iconsrc: darkTheme ? lightModeIcon : darkModeIcon,
     }
 
     
@@ -36,7 +38,7 @@ export default function ModalAboutme() {
     return (
         
         <div style={themeStyles}>
-        <img className="darkmodetoggle" style={{width:'50px',height: '50px', cursor:'pointer' }} onClick={toggleTheme} src={darkModeIcon} />
+        <img alt="Toggle Dark/Light mode" className="darkmodetoggle" style={{width:'50px',height: '50px', cursor:'pointer',transition:'0.5s',borderRadius:'20px'}} onClick={toggleTheme} src={themeStyles.iconsrc} />
         <img src={themeStyles.src} className="kntur" />
 	<header className="headertop">
     <a className="headerbuttons" onClick={toggleModal}>About me</a>
