@@ -176,7 +176,7 @@ export default function ModalImages() {
         <>
         <div style={themeStyles} className="bodyimages">
             <div className="picturediv" onClick={toggleModal1}>
-                    <img className="section" src={section1pic} />
+                    <ReactImageAppear onClick={toggleModal1} className="section" src={section1pic} animationDuration="1s"></ReactImageAppear>
                     <div onClick={toggleModal1} className="picturetext"><p>LOREM IPSUM DOLOR</p></div>
             </div>
 
